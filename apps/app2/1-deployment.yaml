@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
-  namespace: uat
+  namespace: staging
   labels:
     app: nginx
 spec:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: ressafri/nginx:v0.1.3
+          image: ressafri/nginx:v0.1.2
           ports:
             - containerPort: 80
 
