@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: ressafri/nginx:v0.1.2
+          image: ressafri/nginx:0.1.3
           ports:
             - containerPort: 80
